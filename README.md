@@ -10,12 +10,12 @@ E-commerce project focusing on second-hand Nike sneakers. Our mission is to empo
 
 - **Nike Price Scraping**: Incorporated scraping functionalities to obtain the average price of Nike sneakers directly from the official Nike website.
 
-- **Customized Search on Vinted and Vestiaire Collective**: Enhanced both data scraping to support gender-specific searches with parameters such as gender, color, and size.
+- **Customized Search on Vinted and Vestiaire Collective**: Enhanced both data scraping to support specific searches with parameters such as gender, color, and size.
 
 - **Carbon Footprint Estimation**: Calculated an approximate carbon footprint for each second-hand item using geopy and predefined emission rates.
 
-- **Profit Calculation**: Provided users with profit calculation for each item by comparing the second-hand price with the average Nike price.
+- **Profit Calculation**: Provided users with profit calculation for each item by comparing the second-hand price with the average original Nike price.
 
-- **Streamlit App (Coming Soon)**: The next step is to develop a Streamlit app to offer users a user-friendly interface for exploring and purchasing second-hand Nike sneakers.
+- **Streamlit App (Coming Soon)**: The next step is to develop a Streamlit app to offer users a user-friendly interface for exploring second-hand Nike sneakers.
 
 
