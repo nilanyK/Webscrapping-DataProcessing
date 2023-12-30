@@ -2,7 +2,7 @@
 
 ## Overview
 
-E-commerce project focusing on second-hand Nike sneakers. Our mission is to empower users to make environmentally conscious and economically informed choices when purchasing second-hand footwear.
+E-commerce project focusing on second-hand Nike sneakers. Our mission is to empower users to make environmentally conscious and economically informed choices when purchasing footwear.
 
 ## Project Highlights
 
