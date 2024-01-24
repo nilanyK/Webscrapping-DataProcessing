@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-
+from PIL import Image
 
 def main():
     st.set_page_config(layout="wide", page_title="Sustainable Nike Sneaker Marketplace 🌿", page_icon=":shoe:")
@@ -89,8 +89,15 @@ def main():
         # Use a single row layout for the image and buttons
     row = st.container()
 
-    # Add the Nike logo to the first column (top-left corner)
-    row.image("nike.png", use_column_width=False, width=50)
+    # Get the directory where the script is located
+    script_directory = Path(__file__).parent
+
+    # Construct the full path for the image file
+    image_file_path = script_directory / 'nike.png'
+
+    # Load the image into a PIL Image object
+    image = Image.open(image_file_path)
+    row.image(image, use_column_width=False, width=50)
     
     
 
