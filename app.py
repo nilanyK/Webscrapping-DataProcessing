@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 from PIL import Image
+from pathlib import Path
 
 def main():
     st.set_page_config(layout="wide", page_title="Sustainable Nike Sneaker Marketplace 🌿", page_icon=":shoe:")
@@ -83,10 +84,9 @@ def main():
     </style>
     """,
     unsafe_allow_html=True,
-)
+    )
 
-
-        # Use a single row layout for the image and buttons
+    # Use a single row layout for the image and buttons
     row = st.container()
 
     # Get the directory where the script is located
@@ -99,8 +99,6 @@ def main():
     image = Image.open(image_file_path)
     row.image(image, use_column_width=False, width=50)
     
-    
-
     # Render the title
     st.markdown("<h1 class='title'>Sustainable Nike Sneaker Marketplace 🌿</h1>", unsafe_allow_html=True)
 
@@ -108,7 +106,6 @@ def main():
     st.markdown("<p class='mission-text'>Empowering users to make environmentally conscious and economically informed choices when purchasing sneakers. 🌍</p>", unsafe_allow_html=True)
 
     st.markdown("<hr style='border: 1px solid #d8e6e1;'>", unsafe_allow_html=True)
-
 
     # Mapping for gender, color, and size (you can add this part based on your mapping)
     gender_mapping = {"homme": 1231, "femme": 1904, "fille": 1255, "garcon": 1256}
@@ -175,19 +172,8 @@ def main():
 
     size = st.selectbox("Enter size:", available_sizes)
 
-from pathlib import Path
-# Function to load data from CSV files
-def load_csv(file_name):
-    # Construct the full path for the CSV file
-    file_path = script_directory / file_name
-    # Read the CSV file using the full path
-    return pd.read_csv(file_path, sep=',')
-
-# Get the directory where the script is located
-script_directory = Path(__file__).parent
     if st.button("Search"):
         # Load the corresponding CSV files from the folder
-        
         csv_files = [file for file in script_directory.glob(f"FINAL_AllData_{selected_model}.csv")]
         
         if csv_files:
@@ -221,6 +207,16 @@ script_directory = Path(__file__).parent
                     st.markdown("</div>", unsafe_allow_html=True)
                     # Add a line between each row
                     st.markdown("<hr style='border: 1px solid #d8e6e1;'>", unsafe_allow_html=True)
+
+# Function to load data from CSV files
+def load_csv(file_name):
+    # Construct the full path for the CSV file
+    file_path = script_directory / file_name
+    # Read the CSV file using the full path
+    return pd.read_csv(file_path, sep=',')
+
+# Get the directory where the script is located
+script_directory = Path(__file__).parent
 
 # Run the app
 if __name__ == "__main__":
