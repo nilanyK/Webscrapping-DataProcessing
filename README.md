@@ -19,7 +19,7 @@ ESILV - Machine Learning for NLP - Project 2024 <br>
 
 
 
-### Overview
+## Overview
 In the evolving landscape of e-commerce, our project aims to address the growing demand for sustainable options within niche markets, specifically focusing on second-hand Nike sneakers. 
 The project involves the development of a dedicated interface that allows users to explore pre-owned Nike sneakers. 
  
@@ -39,7 +39,7 @@ The project repository contains the following main files :
 - **app.py** : The Python script for the Streamlit app, which allows users to explore data insights, view sentiment analysis results, and interact with the QA system.
 
 
-### Installation
+## Installation
 Our interactive application offers a user-friendly interface for exploring Nike sneakers with tailored search options. <br>
 <br>
 **Streamlit App** <br>
@@ -72,10 +72,10 @@ Our interactive application offers a user-friendly interface for exploring Nike 
 
 - **Streamlit App**: Our streamit app that offers a user-friendly interface for exploring second-hand Nike sneakers.
 
-### Data Collection and Preparation
+## Data Collection and Preparation
 Data was scraped from Trustpilot and Yelp. Rigorous data cleaning and preparation were performed to ensure the quality and consistency of the dataset.
 
-### Contributors
+## Contributors
 [KARUNATHASAN Nilany](https://www.linkedin.com/in/nilany-karunathasan-7b49691ba/) <br>
 [SAMBATH Sïndoumady](https://www.linkedin.com/in/s%C3%AFndoumady-sambath-a7519a209/) <br>
 
