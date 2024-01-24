@@ -34,8 +34,8 @@ The project involves the development of a dedicated interface that allows users 
 
 The project repository contains the following main files :
 
-- **NOTEBOOK1_VintedTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing all the code generated for the project. (also accessible via the colab link)
-- **NOTEBOOK2_Vestiaire_Co_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing all the code generated for the project. (also accessible via the colab link)
+- **NOTEBOOK1_VintedTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vinted with explanations of each steps.
+- **NOTEBOOK2_Vestiaire_CoTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vestiaire Collective with explanations of each steps.
 - **app.py** : The Python script for the Streamlit app, which allows users to explore data insights, view sentiment analysis results, and interact with the QA system.
 
 
@@ -65,8 +65,6 @@ Our interactive application offers a user-friendly interface for exploring Nike 
 - **Marketplace Data Scraping**: Utilized web scraping functionalities for Vinted and Vestiaire Collective to gather diverse and up-to-date inventory information.
 
 - **Nike Price Scraping**: Incorporated scraping functionalities to obtain the average price of Nike sneakers directly from the official Nike website.
-
-- **Customized Search on Vinted and Vestiaire Collective**: Enhanced both data scraping to support specific searches with parameters such as gender, color, and size.
 
 - **Carbon Footprint Estimation**: Calculated an approximate carbon footprint for each second-hand item using geopy and predefined emission rates.
 
