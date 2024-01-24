@@ -168,15 +168,24 @@ def main():
 
     size = st.selectbox("Enter size:", available_sizes)
 
+from pathlib import Path
+# Function to load data from CSV files
+def load_csv(file_name):
+    # Construct the full path for the CSV file
+    file_path = script_directory / file_name
+    # Read the CSV file using the full path
+    return pd.read_csv(file_path, sep=',')
+
+# Get the directory where the script is located
+script_directory = Path(__file__).parent
     if st.button("Search"):
         # Load the corresponding CSV files from the folder
-        folder_path = os.path.dirname(os.path.abspath(__file__))  # Use the current directory
-        csv_files = [file for file in os.listdir(folder_path) if file.startswith(f"FINAL_AllData_{selected_model}.csv")]
+        
+        csv_files = [file for file in script_directory.glob(f"FINAL_AllData_{selected_model}.csv")]
         
         if csv_files:
             # Load the first CSV file as an example
-            csv_file_path = os.path.join(folder_path, csv_files[0])
-            df = pd.read_csv(csv_file_path, sep=",")
+            df = load_csv(csv_files[0].name)
 
             # Apply filters
             filtered_df = df[(df["Gender"] == gender) & (df["Color"] == color.upper()) & (df["Size"] == size)]         
