@@ -35,8 +35,8 @@ The project involves the development of a dedicated interface that allows users 
 
 The project repository contains the following main files :
 
-- **NOTEBOOK1_VintedTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vinted with explanations of each steps.
-- **NOTEBOOK2_Vestiaire_CoTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vestiaire Collective with explanations of each steps.
+- **NOTEBOOK1_Vinted_ScrappingTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vinted with explanations of each steps.
+- **NOTEBOOK2_Vestiaire_Co_ScrappingTop5_KARUNATHASAN_SAMBATH.ipynb** : A Jupyter Notebook containing the complete scrapping process of Top 5 most sold nike sneakers on Vestiaire Collective with explanations of each steps.
 - **app.py** : The Python script for the Streamlit app, which offers a user-friendly interface for exploring Nike sneakers with tailored search options.
 
 
