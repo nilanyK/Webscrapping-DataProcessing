@@ -1,4 +1,4 @@
-ESILV - Machine Learning for NLP - Project 2024 <br>
+ESILV - Webscrapping & Data Processing - Project 2024 <br>
 [KARUNATHASAN Nilany](https://www.linkedin.com/in/nilany-karunathasan-7b49691ba/) <br>
 [SAMBATH Sïndoumady](https://www.linkedin.com/in/s%C3%AFndoumady-sambath-a7519a209/) <br>
 <br>
